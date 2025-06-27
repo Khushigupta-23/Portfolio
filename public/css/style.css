@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+
+/* Custom Components */
+@layer components {
+    .btn-primary {
+        @apply rounded-full font-semibold shadow-md;
+    }
+    .btn-outline {
+        @apply rounded-full font-semibold border-2;
+    }
+}
+
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Animations */
+.animate-fade-in-up {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.animation-delay-300 {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .text-6xl {
+        font-size: 4xl;
+    }
+    .text-xl {
+        font-size: lg;
+    }
+}

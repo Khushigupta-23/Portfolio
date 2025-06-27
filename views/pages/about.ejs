@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Khushi - Full-Stack Developer passionate about innovative web solutions">
+    <meta name="keywords" content="Khushi, about, full-stack developer, web development, skills, education">
+    <meta name="author" content="Khushi">
+    <title>About - Khushi's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Google Fonts: Poppins + Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-blue-800 text-white">
+    <%- include('../partials/navbar') %>
+    <!-- About Me Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-playfair text-center mb-10 animate-fade-in-up">About Me</h2>
+            <!-- Photo and Bio -->
+            <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
+                <div class="w-full md:w-1/3">
+                    <img src="/images/profile.jpg" alt="Khushi's Profile Photo" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-2/3">
+                    <p class="text-lg font-poppins leading-relaxed animate-fade-in-up animation-delay-300">
+                        Hi! I'm Khushi, a passionate Full-Stack Developer with a love for creating innovative web solutions. I thrive on solving complex problems and turning ideas into functional, user-friendly applications. With a strong foundation in both front-end and back-end technologies, I’m dedicated to continuous learning and delivering high-quality work.
+                    </p>
+                </div>
+            </div>
+            <!-- Education and Skills -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-900 p-6 rounded-lg shadow-lg animate-fade-in-up">
+                    <h3 class="text-2xl font-playfair mb-4">Education</h3>
+                    <p class="text-lg font-poppins">B.Tech in Computer Science<br>XYZ University, 2020-2024</p>
+                </div>
+                <div class="bg-blue-900 p-6 rounded-lg shadow-lg animate-fade-in-up animation-delay-300">
+                    <h3 class="text-2xl font-playfair mb-4">Skills</h3>
+                    <ul class="text-lg font-poppins list-disc list-inside">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>React, Node.js, Express</li>
+                        <li>MongoDB, Python</li>
+                        <li>Git, Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Journey -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-playfair mb-4 text-center animate-fade-in-up">My Journey</h3>
+                <p class="text-lg font-poppins leading-relaxed text-center animate-fade-in-up animation-delay-300">
+                    My journey in tech began with a curiosity for coding during my school years. I pursued a B.Tech in Computer Science, where I honed my skills in web development. Over the years, I’ve worked on various projects, from simple websites to complex applications, fueling my passion for creating impactful digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+    <%- include('../partials/footer') %>
+    <script src="/js/script.js"></script>
+</body>
+</html>
