@@ -6,3 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('hidden');
     });
 });
+
+

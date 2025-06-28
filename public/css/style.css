@@ -4,10 +4,10 @@
 /* Custom Components */
 @layer components {
     .btn-primary {
-        @apply rounded-full font-semibold shadow-md;
+        @apply rounded-full font-semibold shadow-md transition-all duration-300;
     }
     .btn-outline {
-        @apply rounded-full font-semibold border-2;
+        @apply rounded-full font-semibold border-2 transition-all duration-300;
     }
 }
 
@@ -22,19 +22,46 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* Animations */
-.animate-fade-in-up {
-    animation: fadeInUp 1.2s ease-out;
+/* Fade-in Animation */
+body:not(.loaded) .fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
 }
 
-.animation-delay-300 {
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
+body.loaded .fade-in {
+    opacity: 1;
 }
 
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+.delay-50 {
+    transition-delay: 50ms;
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-150 {
+    transition-delay: 150ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-250 {
+    transition-delay: 250ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+.delay-350 {
+    transition-delay: 350ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
 }
 
 /* Responsive Adjustments */
@@ -45,10 +72,13 @@ body {
     .nav-link {
         font-size: 1rem;
     }
-    .text-6xl {
-        font-size: 4xl;
+    .text-5xl {
+        font-size: 3rem;
+    }
+    .text-3xl {
+        font-size: 2rem;
     }
     .text-xl {
-        font-size: lg;
+        font-size: 1.25rem;
     }
 }

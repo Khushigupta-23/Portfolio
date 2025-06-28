@@ -15,49 +15,63 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-blue-800 text-white">
+<body class="bg-gradient-to-b from-indigo-300 to-teal-400">
     <%- include('../partials/navbar') %>
     <!-- About Me Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-playfair text-center mb-10 animate-fade-in-up">About Me</h2>
+    <section class="py-20">
+        <div class="container mx-auto px-6">
             <!-- Photo and Bio -->
-            <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
-                <div class="w-full md:w-1/3">
-                    <img src="/images/profile.jpg" alt="Khushi's Profile Photo" class="w-full rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                <div class="w-full md:w-1/3 fade-in delay-50">
+                    <img src="/images/profile.jpg" alt="Khushi's Profile Photo" class="w-full rounded-2xl shadow-lg">
                 </div>
                 <div class="w-full md:w-2/3">
-                    <p class="text-lg font-poppins leading-relaxed animate-fade-in-up animation-delay-300">
-                        Hi! I'm Khushi, a passionate Full-Stack Developer with a love for creating innovative web solutions. I thrive on solving complex problems and turning ideas into functional, user-friendly applications. With a strong foundation in both front-end and back-end technologies, I’m dedicated to continuous learning and delivering high-quality work.
+                    <h2 class="text-5xl md:text-6xl font-playfair mb-6 text-gray-900 transition-all duration-300 hover:text-gray-700 fade-in delay-100">About Me</h2>
+                    <p class="text-xl md:text-2xl font-poppins leading-relaxed text-gray-900 mb-8 transition-all duration-300 hover:text-gray-700 fade-in delay-150">
+                        Hi! I'm Khushi, a passionate Full-Stack Developer currently interning as a Teaching Assistant at Apna college community, where I solve MERN-related queries and assist peers. I thrive on building innovative web solutions and have a strong foundation in MERN stack, DSA with Java, MySQL, and MongoDB. My journey in tech is fueled by curiosity and a love for problem-solving.
                     </p>
                 </div>
             </div>
-            <!-- Education and Skills -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-blue-900 p-6 rounded-lg shadow-lg animate-fade-in-up">
-                    <h3 class="text-2xl font-playfair mb-4">Education</h3>
-                    <p class="text-lg font-poppins">B.Tech in Computer Science<br>XYZ University, 2020-2024</p>
+            <!-- Education, Skills, and Achievements -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg fade-in delay-200">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">Education</h3>
+                    <p class="text-lg font-poppins text-gray-900">B.Tech in Computer Engineering<br>Shri Ram Institute of Technology, Jabalpur<br>CGPA: 7.8</p>
                 </div>
-                <div class="bg-blue-900 p-6 rounded-lg shadow-lg animate-fade-in-up animation-delay-300">
-                    <h3 class="text-2xl font-playfair mb-4">Skills</h3>
-                    <ul class="text-lg font-poppins list-disc list-inside">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>React, Node.js, Express</li>
-                        <li>MongoDB, Python</li>
-                        <li>Git, Tailwind CSS</li>
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg fade-in delay-250">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">Skills</h3>
+                    <ul class="text-lg font-poppins text-gray-900 list-disc list-inside">
+                        <li>MERN Stack (MongoDB, Express.js, React, Node.js)</li>
+                        <li>DSA with Java</li>
+                        <li>MySQL, MongoDB</li>
+                        <li>Web Development</li>
                     </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg fade-in delay-300">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">Achievements</h3>
+                    <p class="text-lg font-poppins text-gray-900">
+                        Participated in a hackathon at IIT Roorkee’s Tech Fest, earning recognition for innovative ideas. Earned certifications from Sigma 4.0 in MERN Development, Web Development, and DSA.
+                    </p>
                 </div>
             </div>
             <!-- Journey -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-playfair mb-4 text-center animate-fade-in-up">My Journey</h3>
-                <p class="text-lg font-poppins leading-relaxed text-center animate-fade-in-up animation-delay-300">
-                    My journey in tech began with a curiosity for coding during my school years. I pursued a B.Tech in Computer Science, where I honed my skills in web development. Over the years, I’ve worked on various projects, from simple websites to complex applications, fueling my passion for creating impactful digital experiences.
-                </p>
+            <div class="mt-20">
+                <h3 class="text-3xl font-playfair mb-8 text-center text-gray-900 transition-all duration-300 hover:text-gray-700 fade-in delay-350">My Journey</h3>
+                <div class="bg-gray-100 p-8 rounded-2xl shadow-lg fade-in delay-400">
+                    <p class="text-xl font-poppins leading-relaxed text-center text-gray-900 transition-all duration-300 hover:text-gray-700">
+                        My tech journey began with a passion for coding, leading me to pursue B.Tech at Shri Ram Institute of Technology. I’ve honed my skills in MERN and DSA, participating in a hackathon at IIT Roorkee’s Tech Fest, where my team showcased innovative ideas. I also earned certifications like Sigma 4.0 in MERN and Development, and DSA, reflecting my dedication to growth.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <%- include('../partials/footer') %>
     <script src="/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100); // Slight delay to ensure page renders
+        });
+    </script>
 </body>
 </html>
