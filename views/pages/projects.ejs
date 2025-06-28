@@ -1,48 +1,67 @@
-<section class="py-12 bg-gray-50 fade-in" id="projects">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-playfair text-center mb-10">My Projects</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Project Card 1 -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden transition-transform transform hover:-translate-y-1">
-        <img src="project1.jpg" alt="Project 1" class="w-full h-56 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-2">Project One</h3>
-          <p class="text-gray-600 mb-4">A short description about what this project does and technologies used.</p>
-          <div class="flex gap-4">
-            <a href="https://github.com/yourusername/project1" target="_blank" class="btn-outline px-4 py-2 border-gray-800 hover:bg-gray-100">GitHub</a>
-            <a href="https://yourliveproject1.com" target="_blank" class="btn-primary bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Live Demo</a>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khushi's Projects - Showcase of innovative web development projects">
+    <meta name="keywords" content="Khushi, projects, web development, Wanderlust, LinkedIn Clone, Zoom Clone">
+    <meta name="author" content="Khushi">
+    <title>Projects - Khushi's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Google Fonts: Poppins + Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gradient-to-b from-sky-200 to-teal-300">
+    <%- include('../partials/navbar') %>
+    <!-- Projects Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-playfair text-center mb-6 text-gray-900 transition-all duration-300 hover:text-gray-700 slide-up delay-50">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <!-- Wanderlust Card -->
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg slide-up delay-100">
+                    <img src="/images/wanderlust.jpg" alt="Wanderlust Project" class="w-full rounded-2xl mb-4">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">Wanderlust</h3>
+                    <p class="text-lg font-poppins text-gray-900 mb-4">A travel planning application built with modern web technologies.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://github.com/yourusername/wanderlust" target="_blank" class="btn-primary px-6 py-2 text-lg font-poppins text-white bg-teal-500 hover:bg-teal-600 transition-all duration-300 rounded-full shadow-md">GitHub</a>
+                        <a href="https://live-demo-wanderlust.com" target="_blank" class="btn-outline px-6 py-2 text-lg font-poppins text-teal-500 border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 rounded-full">Live Demo</a>
+                    </div>
+                </div>
+                <!-- LinkedIn Clone Card -->
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg slide-up delay-150">
+                    <img src="/images/linkedin-clone.jpg" alt="LinkedIn Clone Project" class="w-full rounded-2xl mb-4">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">LinkedIn Clone</h3>
+                    <p class="text-lg font-poppins text-gray-900 mb-4">A professional networking platform clone with key features.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn-primary px-6 py-2 text-lg font-poppins text-white bg-teal-500 hover:bg-teal-600 transition-all duration-300 rounded-full shadow-md disabled">GitHub</a>
+                        <a href="#" class="btn-outline px-6 py-2 text-lg font-poppins text-teal-500 border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 rounded-full disabled">Live Demo</a>
+                    </div>
+                </div>
+                <!-- Zoom Clone Card -->
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg slide-up delay-200">
+                    <img src="/images/zoom-clone.jpg" alt="Zoom Clone Project" class="w-full rounded-2xl mb-4">
+                    <h3 class="text-2xl font-playfair mb-4 text-gray-900">Zoom Clone</h3>
+                    <p class="text-lg font-poppins text-gray-900 mb-4">A video conferencing application mimicking Zoom's core functionality.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn-primary px-6 py-2 text-lg font-poppins text-white bg-teal-500 hover:bg-teal-600 transition-all duration-300 rounded-full shadow-md disabled">GitHub</a>
+                        <a href="#" class="btn-outline px-6 py-2 text-lg font-poppins text-teal-500 border-2 border-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300 rounded-full disabled">Live Demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden transition-transform transform hover:-translate-y-1">
-        <img src="project2.jpg" alt="Project 2" class="w-full h-56 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-2">Project Two</h3>
-          <p class="text-gray-600 mb-4">A short description about what this project does and technologies used.</p>
-          <div class="flex gap-4">
-            <a href="https://github.com/yourusername/project2" target="_blank" class="btn-outline px-4 py-2 border-gray-800 hover:bg-gray-100">GitHub</a>
-            <a href="https://yourliveproject2.com" target="_blank" class="btn-primary bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Live Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden transition-transform transform hover:-translate-y-1">
-        <img src="project3.jpg" alt="Project 3" class="w-full h-56 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
-          <p class="text-gray-600 mb-4">A short description about what this project does and technologies used.</p>
-          <div class="flex gap-4">
-            <a href="https://github.com/yourusername/project3" target="_blank" class="btn-outline px-4 py-2 border-gray-800 hover:bg-gray-100">GitHub</a>
-            <a href="https://yourliveproject3.com" target="_blank" class="btn-primary bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Live Demo</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
+    <script src="/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100); // Slight delay to ensure page renders
+        });
+    </script>
+</body>
+</html>
