@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume - Khushi's Full-Stack Developer Portfolio">
+    <meta name="keywords" content="Khushi, resume, full-stack developer, portfolio, download">
+    <meta name="author" content="Khushi">
+    <title>Resume - Khushi's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Google Fonts: Poppins + Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gradient-to-b from-sky-200 to-teal-300 relative">
+    <%- include('../partials/navbar') %>
+    <!-- Resume Section -->
+    <section class="py-20 relative z-10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-playfair text-center mb-12 text-gray-900 transition-all duration-300 hover:text-gray-700 slide-up delay-50 animate-pulse-once">My Resume</h2>
+            <p class="text-xl md:text-2xl font-poppins text-center text-gray-900 mb-12 transition-all duration-300 hover:text-gray-700 slide-up delay-100">Download or view my detailed resume to learn more about my skills and experience!</p>
+            <!-- Resume Card -->
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mb-12">
+                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 slide-up delay-150 h-48 flex items-center justify-center">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-playfair mb-4 text-gray-900">Download Resume</h3>
+                        <a href="https://drive.google.com/file/d/1bt5btJHHa4VnIUI5F6uyVlAS13lYBT5k/view" target="_blank" class="btn-primary px-6 py-2 text-lg font-poppins text-white bg-teal-500 hover:bg-teal-600 transition-all duration-300 rounded-full shadow-md">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100); // Slight delay to ensure page renders
+        });
+
+        // Animation for initial load
+        document.body.classList.add('animate-fade-in');
+    </script>
+    <style>
+        .animate-pulse-once {
+            animation: pulse 1s ease-out;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Ensure navbar stays on top */
+        .navbar {
+            z-index: 50;
+        }
+    </style>
+</body>
+</html>
